@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Uygulaması</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div align="center">
+            <img src="logo.png" alt="" width="auto" height="150px">
+            <h1> Online Özgeçmiş Formu </h1>
+        </div>
+        
+    </header>
+
+
+
+        <!-- Table -->
+            <table align="center">
+                <!-- Form-->
+                    <form action="" autocomplete="on">
+                        <tr>
+                            <td>Ad :</td>
+                            <td><input type="text" required autofocus></td>
+                        </tr>
+                      
+                        <tr>
+                            <td>Soyad :</td>
+                            <td><input type="text" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td>Doğum Tarihi :</td> 
+                            <td><input type="date" name="dgunutarihsaat" max="2002-12-31"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Telefon numarası Ülke  :</td>
+                            <td><input list="ulke">
+                                <datalist id="ulke">
+                                    
+                                    <option value="Abd"></option>
+                                    <option value="Canada"></option>
+                                    <option value="Turkey"></option>
+                                </datalist></td>
+                        </tr>
+
+                        <tr>
+                            <td>Numara  :</td>
+                            <td><input type="text" pattern="[0-9]{10}" placeholder="Başında 0 olmadan giriniz" required></td>
+                        </tr>
+
+                        <tr>
+                            <td>E-posta Adresi :</td>
+                            <td><input type="email" placeholder="isim@gmail.com"><br>
+                            </td>
+
+                        </tr>
+                        
+                        <tr>
+                            <td>Adres : </td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>İlçe :</td> 
+                            <td><input type="text" required></td>
+                            
+                            <tr>
+                            <td>İl : </td>
+                            <td><input type="text" required></td>
+                            </tr>
+                            <td>Posta Kodu : </td>
+                            <td><input type="text" pattern="[0-9]{5}" placeholder="11600" required></td>
+                            <tr>
+                                <td>Bizi nerede Gördünüz ?</td>
+                                <td><input type="checkbox" name="reklampano"> Reklam Panoları
+                                  <input type="checkbox" name="social"> Sosyal Medya
+                                  <input type="checkbox" name="diger"> Diğer
+                                  </td>
+                            </tr>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>Sertifikalarınız : </td>
+                            <td><input type="file" multiple></td>
+                        </tr>
+
+                        <tr>
+                            <td>Kendinizi tanıtın :</td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>Web Siteniz :</td>
+                            <td> <input type="url"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="submit" value="GONDER" formaction="ik.php">
+                            <input type="submit" value="Bölüm Başkanlığına Gönder" formaction="bb.php"></td>
+                        </tr>
+                                     
+                    </form>
+            </table>
+        <!-- FOOTER -->
+            <footer align="center">
+                <span>
+                    Tüm hakları saklıdır.
+                </span>
+            </footer>
+</body>
+</html>
